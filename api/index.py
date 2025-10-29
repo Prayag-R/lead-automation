@@ -37,7 +37,7 @@ def submit_form():
         message = data.get('message')
         
         # 1. Generate AI response with Gemini
-        model = genai.GenerativeModel('gemini-1.5-flash-latest')
+        model = genai.GenerativeModel('gemini-flash-latest')
         prompt = f"""You are a friendly and professional business assistant. A potential customer just submitted a contact form. Write a warm, personalized response (2-3 sentences) thanking them for reaching out and letting them know someone will follow up within 24 hours.
 
 Customer Name: {name}
